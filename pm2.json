@@ -1,0 +1,15 @@
+{
+    "apps":[
+        {
+            "name":"codeimprove",
+            "script":"./control.js",
+            "watch":true,
+            "ignore_watch":["node_module","public"],
+             "instances":1,
+            "exce_mode":"cluster",
+            "env":{
+                "DB_NAME":"p2_improve"
+            }
+        }
+    ]
+}

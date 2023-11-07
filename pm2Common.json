@@ -1,0 +1,29 @@
+{
+    "apps":[
+        {
+            "name":"codeimprove",
+            "script":"./control.js",
+            "watch":true,
+            "ignore_watch":["node_module","public"],
+             "instances":1,
+            "exce_mode":"cluster",
+            "env":{
+                "DB_NAME":"p2_improve"
+            }
+        },
+
+        {
+            "name":"codeimprove2",
+            "cwd":"C:/Users/Tech Team/OneDrive/Desktop/p3",
+            "script":"./control2.js",
+            "watch":true,
+            "ignore_watch":["node_module","public"],
+             "instances":1,
+            "exce_mode":"fork",
+            "env":{
+                "DB_NAME":"p2_improve"
+            }
+
+        }
+    ]
+}
